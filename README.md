@@ -3,4 +3,4 @@
 
 ## Prerequisites
 - SpringBoot
-
+- Spring Boot JPA
