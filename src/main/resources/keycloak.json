@@ -1,0 +1,12 @@
+{
+  "realm": "AlphaPrime",
+  "auth-server-url": "http://localhost:8080/auth/",
+  "ssl-required": "external",
+  "resource": "nuical",
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "acff88db-d965-4704-9af3-8ab8e1692fd8"
+  },
+  "confidential-port": 0,
+  "policy-enforcer": {}
+}
