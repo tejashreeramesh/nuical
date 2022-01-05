@@ -3,8 +3,6 @@
  */
 package com.nous.app.controllers;
 
-import java.util.List;
-
 import javax.annotation.security.RolesAllowed;
 
 import org.slf4j.Logger;
@@ -17,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.nous.app.config.PropertiesConfig;
 import com.nous.app.services.CalendarService;
-import com.nous.app.services.dto.HolidayBean;
 
 /**
  * @author mohanavelp
@@ -54,9 +51,9 @@ public class ApplicationRestController {
 		return "Only users with view authority is permitted.";
 	}
 	
-	@RequestMapping(value = "/allHolidays", method = RequestMethod.GET)
-	@RolesAllowed("USER")
-	public List<HolidayBean> fetchAllHolidays() {
-		return calendarService.fetchHolidays();
-	}
+//	@RequestMapping(value = "/allHolidays", method = RequestMethod.GET)
+//	@RolesAllowed("USER")
+//	public List<HolidayBean> fetchAllHolidays() {
+//		return calendarService.fetchHolidays();
+//	}
 }
